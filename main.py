@@ -16,20 +16,12 @@ def parkinson_disease_prediction():
             0.04825, 0.04465, 0.10470, 0.01767, 19.64900, 0.417356, 0.823484, -3.747787, 0.234513, 2.332180, 0.410335]
     service.predict(data)
 
-    # df = service.get_dataset()
-    # title = 'BMI Distribution'
-    # dist_plot(df['bmi'], title)
+    df = service.get_dataset()
+    # title = 'MDVP:Fhi(Hz) Distribution'
+    # dist_plot(df['MDVP:Fhi(Hz)'], title)
 
-    # countplot(df)
-
-    # params = dict(x='children', data=df)
+    # params = dict(x='status', data=df)
     # countplot(df, params)
-
-    # params = dict(x='smoker', data=df)
-    # countplot(df, params)
-
-    # title = 'Charges Distribution'
-    # dist_plot(df['charges'], title)
 
 
 parkinson_disease_prediction()
